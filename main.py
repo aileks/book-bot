@@ -1,12 +1,10 @@
-def get_book_text(filepath):
-    file_contents = None
+def get_book_text(filepath: str) -> str:
     with open(filepath) as f:
-        file_contents = f.read()
-    return file_contents
+        return f.read()
 
 
-def main():
-    contents = get_book_text("./books/frankenstein.txt")
+def main() -> None:
+    contents: str = get_book_text("./books/frankenstein.txt")
     print(contents)
 
 
