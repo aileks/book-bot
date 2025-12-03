@@ -11,12 +11,14 @@ def main() -> None:
     num_words = get_word_count(contents)
     num_letters = get_char_count(contents)
     sorted_chars = sort_char_count(num_letters)
+
     print("============ BOOKBOT ============")
     print("Analyzing book found at books/frankenstein.txt...")
+
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
-    print("--------- Character Count -------")
 
+    print("--------- Character Count -------")
     for count in sorted_chars:
         print(f"{count['letter']}: {count['count']}")
 
